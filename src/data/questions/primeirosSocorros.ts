@@ -8,11 +8,11 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
       'Após um acidente de trânsito envolvendo um ônibus, qual deve ser a primeira providência do motorista antes de atender qualquer ferido?',
     options: [
       'Retirar imediatamente todas as vítimas de dentro dos veículos pela janela',
+      'Pedir aos passageiros que empurrem o veículo para fora da pista rapidamente',
       'Garantir a segurança do local: acionar o pisca-alerta, desligar a ignição se possível, sinalizar a via à distância segura e chamar o resgate especializado',
       'Jogar água fria sobre os feridos que estiverem conscientes',
-      'Pedir aos passageiros que empurrem o veículo para fora da pista rapidamente',
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation:
       'Sinalizar a via e garantir que não haja novos atropelamentos, incêndio ou choque elétrico vem sempre antes de qualquer atendimento às vítimas.',
   },
@@ -67,12 +67,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Sobre a sinalização de um acidente em via de velocidade máxima de 80 km/h com pista seca e boa visibilidade, a que distância mínima aproximada do local do acidente o triângulo ou sinalização deve começar a ser colocada?',
     options: [
-      'A apenas 5 metros atrás do veículo acidentado',
-      'A pelo menos 80 metros (cerca de 80 passos largos) antes do acidente, dobrando a distância em chuva, neblina ou curva',
       'Bem encostado no para-choque traseiro do ônibus',
+      'A apenas 5 metros atrás do veículo acidentado',
       'Apenas na frente do veículo, no sentido em que ele seguia',
+      'A pelo menos 80 metros (cerca de 80 passos largos) antes do acidente, dobrando a distância em chuva, neblina ou curva',
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation:
       'A regra prática segura é usar 1 metro (ou 1 passo longo) por km/h da velocidade da via, dobrando em curvas, noite, chuva ou neblina.',
   },
@@ -83,11 +83,11 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
       'Por que, como regra geral, NÃO se deve movimentar uma vítima de acidente de trânsito nem retirar o capacete de um motociclista ferido?',
     options: [
       'Porque pode sujar o uniforme do motorista',
-      'Porque movimentar sem técnica pode agravar fraturas ocultas na coluna vertebral e causar lesão permanente na medula',
-      'Porque o capacete ajuda a manter a febre alta',
       'Porque a lei proíbe tocar em qualquer vítima mesmo para estancar sangue',
+      'Porque o capacete ajuda a manter a febre alta',
+      'Porque movimentar sem técnica pode agravar fraturas ocultas na coluna vertebral e causar lesão permanente na medula',
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation:
       'Lesões na coluna cervical ou dorsal podem piorar gravemente com movimentos inadequados. Só se remove vítima em risco iminente de morte (como fogo ou explosão).',
   },
@@ -112,12 +112,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Diante de um ferimento com sangramento intenso (hemorragia externa) em um braço ou perna, qual é o procedimento inicial mais seguro?',
     options: [
-      'Passar pó de café ou pomada diretamente sobre o corte',
-      'Proteger as mãos (luvas ou saco plástico limpo) e fazer compressão direta firme sobre o ferimento com pano limpo ou gaze, sem ficar retirando o pano já encharcado',
       'Fazer um torniquete apertado com arame imediatamente em qualquer corte pequeno',
       'Lavar o ferimento com álcool ou óleo diesel',
+      'Proteger as mãos (luvas ou saco plástico limpo) e fazer compressão direta firme sobre o ferimento com pano limpo ou gaze, sem ficar retirando o pano já encharcado',
+      'Passar pó de café ou pomada diretamente sobre o corte',
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation:
       'A compressão direta com pano limpo e proteção das mãos é o método mais seguro e eficaz para conter a maioria das hemorragias externas até a chegada do socorro.',
   },
@@ -128,11 +128,11 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
       'Um passageiro dentro do ônibus apresenta mal súbito (tontura intensa, falta de ar ou dor forte no peito). Qual é a conduta correta do motorista?',
     options: [
       'Continuar a viagem acelerando até o ponto final da linha',
-      'Parar o ônibus em local seguro assim que possível, acionar o pisca-alerta, acalmar a pessoa, afrouxar roupas apertadas no pescoço e chamar o SAMU (192)',
       'Pedir para o passageiro descer sozinho na calçada imediatamente',
+      'Parar o ônibus em local seguro assim que possível, acionar o pisca-alerta, acalmar a pessoa, afrouxar roupas apertadas no pescoço e chamar o SAMU (192)',
       'Obrigar o passageiro a caminhar de um lado ao outro do corredor',
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation:
       'Estacionar em local seguro, manter ventilação e calma ao redor da pessoa e acionar o 192 passando informações claras garante atendimento rápido sem risco no trânsito.',
   },
@@ -142,12 +142,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Em caso de queimadura térmica na pele de um passageiro (por líquido ou peça quente do motor), qual cuidado imediato é adequado?',
     options: [
+      'Colocar gelo direto encostado na pele queimada',
+      'Furar todas as bolhas com agulha para aliviar a dor',
       'Aplicar manteiga, creme dental ou clara de ovo no local',
       'Resfriar a área suavemente com água corrente limpa em temperatura ambiente e cobrir com pano limpo que não solte fiapos, sem estourar bolhas',
-      'Furar todas as bolhas com agulha para aliviar a dor',
-      'Colocar gelo direto encostado na pele queimada',
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation:
       'Produtos caseiros contaminam a ferida e gelo queima ainda mais. Água limpa em temperatura ambiente e proteção com pano limpo são os cuidados recomendados.',
   },
@@ -157,12 +157,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Caso ocorra princípio de fumaça ou fogo no ônibus com passageiros a bordo, qual é a ordem prioritária de ação do motorista?',
     options: [
-      'Tentar chegar até a garagem primeiro antes de avisar os passageiros',
       'Parar o ônibus imediatamente em local seguro, desligar o motor/chave geral, abrir todas as portas e saídas de emergência e conduzir a evacuação calma dos passageiros para longe do veículo',
+      'Tentar chegar até a garagem primeiro antes de avisar os passageiros',
       'Fechar todas as janelas para abafar o cheiro de fumaça e seguir viagem',
       'Retirar primeiro as bagagens do bagageiro antes de abrir as portas para as pessoas',
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
       'A vida dos passageiros tem prioridade absoluta: parar com segurança, desligar a energia do veículo, evacuar todos para um local seguro distante e acionar o 193.',
   },
@@ -188,11 +188,11 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
       'Ao encontrar uma pessoa desacordada, mas respirando normalmente e sem suspeita de trauma na coluna (por exemplo, após desmaio simples em local seguro), o que ajuda a manter a via aérea livre?',
     options: [
       'Deitar a pessoa de barriga para baixo com o rosto no chão',
+      'Colocar uma colher ou dedo dentro da boca da pessoa',
       'Se não houver trauma, afrouxar roupas apertadas, manter ambiente ventilado e aguardar orientação médica; não jogar água no rosto nem sacudir a pessoa',
       'Sentar a pessoa à força e dar tapas no rosto para acordar',
-      'Colocar uma colher ou dedo dentro da boca da pessoa',
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation:
       'Nunca sacuda, jogue água ou coloque objetos na boca de quem desmaiou ou convulsiona. Mantenha local arejado, proteja a cabeça e acione atendimento médico.',
   },
@@ -217,12 +217,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Em um acidente com fios elétricos da rede pública caídos sobre a lataria do ônibus, qual é o comportamento seguro para o motorista e passageiros?',
     options: [
-      'Descer logo do ônibus pisando normalmente no chão',
       'Permanecer dentro do ônibus sem tocar em partes metálicas externas, avisar todos para não descerem (salvo risco extremo de incêndio, quando se deve saltar com pés juntos sem tocar carroceria e chão juntos) e chamar Bombeiros/companhia elétrica',
-      'Pegar um cabo de vassoura molhado para empurrar o fio',
+      'Descer logo do ônibus pisando normalmente no chão',
       'Sair segurando no corrimão da porta com os pés no asfalto',
+      'Pegar um cabo de vassoura molhado para empurrar o fio',
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
       'Tocar simultaneamente no veículo energizado e no solo provoca choque elétrico fatal. Dentro do ônibus isolado pelos pneus há proteção até desligarem a rede.',
   },
@@ -232,12 +232,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Sobre os extintores de incêndio presentes em veículos de transporte coletivo de passageiros, o que o motorista deve verificar com regularidade?',
     options: [
-      'Se o ponteiro do manômetro está na faixa verde, dentro da validade, com lacre intacto e em local de fácil acesso',
-      'Apenas se a cor vermelha da pintura está brilhante',
-      'Se o extintor está trancado com cadeado dentro do bagageiro fechado',
       'Não precisa verificar porque extintor nunca perde validade ou pressão',
+      'Se o extintor está trancado com cadeado dentro do bagageiro fechado',
+      'Apenas se a cor vermelha da pintura está brilhante',
+      'Se o ponteiro do manômetro está na faixa verde, dentro da validade, com lacre intacto e em local de fácil acesso',
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation:
       'Em veículos de transporte coletivo de passageiros o extintor continua obrigatório e deve estar carregado (ponteiro no verde), dentro do prazo e desobstruído.',
   },
@@ -247,12 +247,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Na relação entre transporte coletivo e meio ambiente, por que a manutenção em dia do sistema de injeção, filtros e catalisador do ônibus a diesel é tão importante?',
     options: [
+      'Porque dispensa o uso de óleo lubrificante no motor',
       'Porque evita fumaça preta excessiva, reduz gases tóxicos poluentes, economiza combustível e evita multa ambiental',
       'Porque faz o ônibus produzir mais barulho no escapamento',
       'Apenas para deixar o motor mais bonito na garagem',
-      'Porque dispensa o uso de óleo lubrificante no motor',
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation:
       'Veículo regulado queima combustível melhor, emite menos fuligem e gases nocivos à saúde respiratória da cidade e gera menos desgaste mecânico.',
   },
@@ -262,12 +262,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Em ônibus modernos a diesel equipados com tecnologia Euro 5 / Euro 6, para que serve o reservatório de ARLA 32?',
     options: [
+      'É um aditivo para aumentar a pressão dos pneus',
       'Para limpar o para-brisa durante chuvas fortes',
       'É um reagente que reduz drasticamente a emissão de óxidos de nitrogênio (NOx) poluentes nos gases do escapamento',
-      'É um aditivo para aumentar a pressão dos pneus',
       'Serve para substituir o óleo diesel quando o tanque seca',
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation:
       'O ARLA 32 atua no sistema catalítico (SCR) transformando gases tóxicos do escapamento em vapor d’água e nitrogênio inofensivo, protegendo o meio ambiente.',
   },
@@ -277,12 +277,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Como o estilo de condução do motorista influencia diretamente a poluição do ar e o consumo de combustível do ônibus?',
     options: [
-      'Acelerar fundo entre um semáforo e outro e frear em cima reduz a poluição',
       'Arrancadas suaves, troca de marchas na faixa correta de rotação, antecipação de paradas e evitar deixar o motor ligado parado à toa diminuem emissões e desgaste',
-      'Andar sempre em marcha baixa com o motor gritando economiza diesel',
       'O modo de dirigir não interfere em nada nas emissões de fumaça',
+      'Andar sempre em marcha baixa com o motor gritando economiza diesel',
+      'Acelerar fundo entre um semáforo e outro e frear em cima reduz a poluição',
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
       'A direção econômica e defensiva reduz queima desnecessária de diesel, emissão de poluentes, ruído urbano e desgaste de freios e pneus.',
   },
@@ -293,11 +293,11 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
       'Sobre a poluição sonora no trânsito urbano, qual conduta do motorista ajuda a preservar a saúde auditiva e o bem-estar da população e dos passageiros?',
     options: [
       'Usar buzina prolongada sempre que o semáforo abrir ou em engarrafamentos',
-      'Utilizar a buzina apenas em toques breves para advertência de segurança necessária e manter o escapamento e sistema do ônibus em boas condições',
       'Retirar o silencioso do escapamento para dar mais potência',
       'Deixar o som da cabine no volume máximo com janelas abertas à noite',
+      'Utilizar a buzina apenas em toques breves para advertência de segurança necessária e manter o escapamento e sistema do ônibus em boas condições',
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation:
       'Excesso de ruído causa estresse e perda auditiva. O CTB permite a buzina apenas em toques breves para evitar acidentes e fora de áreas silenciosas como hospitais.',
   },
@@ -307,12 +307,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Qual atitude correta o motorista e os passageiros devem ter em relação ao lixo produzido dentro do ônibus durante o trajeto?',
     options: [
-      'Jogar papéis e garrafas pela janela na rodovia',
       'Utilizar as lixeiras internas do veículo e descartar corretamente nos coletores dos terminais ou garagem',
-      'Varriar todo o lixo para a calçada no ponto de parada',
+      'Jogar papéis e garrafas pela janela na rodovia',
       'Jogar latas no bueiro para a chuva levar',
+      'Varriar todo o lixo para a calçada no ponto de parada',
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
       'Resíduos lançados nas vias entopem bueiros causando enchentes, sujam a cidade e podem atingir motociclistas e pedestres.',
   },
@@ -337,12 +337,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'No convívio social no trânsito, por que o transporte coletivo bem operado contribui positivamente para a cidade e o meio ambiente?',
     options: [
+      'Porque impede pedestres de caminharem nas calçadas',
       'Porque um único ônibus bem utilizado substitui dezenas de carros individuais, reduzindo congestionamentos e emissões de poluentes por pessoa transportada',
       'Porque obriga todos a usarem carro próprio',
       'Porque aumenta o número de veículos parados nas ruas',
-      'Porque impede pedestres de caminharem nas calçadas',
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation:
       'Um ônibus transporta dezenas de cidadãos ocupando muito menos espaço viário e emitindo menos poluentes por passageiro do que automóveis individuais.',
   },
@@ -352,12 +352,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Qual é a forma ambientalmente correta de destinar pneus velhos, baterias usadas e óleo lubrificante queimado trocados na manutenção dos ônibus?',
     options: [
-      'Queimar os pneus em terrenos baldios e despejar o óleo no esgoto',
       'Encaminhar para coleta especializada, reciclagem ou descarte autorizado pelo fabricante/órgãos ambientais (logística reversa)',
-      'Enterrar as baterias no quintal da garagem',
       'Jogar na beira de rios afastados da cidade',
+      'Queimar os pneus em terrenos baldios e despejar o óleo no esgoto',
+      'Enterrar as baterias no quintal da garagem',
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
       'Óleo, baterias e pneus contaminam solo e água por décadas. A destinação ambientalmente correta em pontos licenciados é obrigatória por lei.',
   },
@@ -382,12 +382,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Ao tentar controlar uma situação de pânico entre passageiros após uma colisão leve sem gravidade, qual atitude do motorista ajuda mais?',
     options: [
-      'Gritar mais alto que todos e sair correndo do ônibus',
-      'Falar com voz calma e firme, informar que o veículo está parado e seguro e orientar a saída organizada pela porta ou saída adequada',
       'Trancar todas as portas por fora com as pessoas lá dentro',
       'Ignorar os passageiros e ligar apenas para conhecidos pessoais',
+      'Falar com voz calma e firme, informar que o veículo está parado e seguro e orientar a saída organizada pela porta ou saída adequada',
+      'Gritar mais alto que todos e sair correndo do ônibus',
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation:
       'Em situações de susto, a postura serena do motorista acalma os passageiros e evita pisoteamentos ou quedas na escada ao descer.',
   },
@@ -397,12 +397,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Em casos de suspeita de fratura em braço ou perna de uma vítima após acidente, qual conduta de primeiros socorros é correta até a chegada da ambulância?',
     options: [
-      'Puxar o membro com força tentando "colocar o osso no lugar"',
-      'Não tentar alinhar nem forçar o osso; manter o membro apoiado e imóvel na posição encontrada enquanto aguarda o atendimento especializado',
-      'Massagear o local da fratura com óleo quente',
       'Pedir que a vítima tente caminhar para testar se quebrou mesmo',
+      'Puxar o membro com força tentando "colocar o osso no lugar"',
+      'Massagear o local da fratura com óleo quente',
+      'Não tentar alinhar nem forçar o osso; manter o membro apoiado e imóvel na posição encontrada enquanto aguarda o atendimento especializado',
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation:
       'Tentar colocar osso fraturado no lugar pode romper nervos e vasos sanguíneos. O correto é evitar movimentos no membro afetado e esperar o socorro.',
   },
@@ -412,12 +412,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Quando um veículo se envolve em acidente e há um objeto encravado no corpo da vítima (como um pedaço de vidro ou ferragem), o que o socorrista leigo NÃO deve fazer?',
     options: [
+      'Proteger ao redor do objeto para que não se mova enquanto aguarda o resgate',
+      'Manter a vítima imóvel e calma',
       'Chamar o SAMU (192) ou Bombeiros (193) imediatamente',
       'Retirar ou puxar o objeto encravado',
-      'Manter a vítima imóvel e calma',
-      'Proteger ao redor do objeto para que não se mova enquanto aguarda o resgate',
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation:
       'Nunca se retira objeto encravado porque ele pode estar tamponando um vaso sanguíneo; puxá-lo pode causar hemorragia grave e fatal.',
   },
@@ -427,12 +427,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Em um dia de calor intenso no Ceará, um passageiro idoso apresenta fraqueza, suor frio, tontura e palidez dentro do ônibus. Qual cuidado simples inicial ajuda enquanto solicita auxílio?',
     options: [
-      'Fechar todas as janelas para manter o ar quente',
       'Acomodar o passageiro sentado ou deitado com conforto, garantir boa ventilação, acalmá-lo e acionar atendimento médico (192) se não melhorar rapidamente',
+      'Fechar todas as janelas para manter o ar quente',
       'Dar bebida alcoólica para aquecer o corpo',
       'Obrigar o passageiro a descer imediatamente em lugar deserto',
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
       'Ventilação, repouso confortável e acionamento rápido de suporte médico protegem o passageiro idoso em quadros de queda de pressão ou mal-estar pelo calor.',
   },
@@ -443,11 +443,11 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
       'Qual cuidado o motorista deve ter ao circular por ruas estreitas próximas a escolas, praças, feiras e hospitais em relação ao convívio social?',
     options: [
       'Manter a velocidade máxima permitida para liberar o trânsito logo',
-      'Reduzir a velocidade, redobrar atenção com crianças e idosos, e evitar uso desnecessário de buzina',
-      'Subir parcialmente na calçada para desviar de carros estacionados',
       'Piscar o farol alto para apressar quem atravessa na faixa',
+      'Subir parcialmente na calçada para desviar de carros estacionados',
+      'Reduzir a velocidade, redobrar atenção com crianças e idosos, e evitar uso desnecessário de buzina',
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation:
       'Áreas com grande circulação de pessoas vulneráveis exigem velocidade compatível, respeito ao silêncio junto a hospitais e prioridade total à vida.',
   },
@@ -457,12 +457,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Por que o respeito às leis ambientais e de cidadania no trânsito reduz acidentes e conflitos na cidade?',
     options: [
-      'Porque garante que apenas ônibus novos possam rodar',
       'Porque a cidade funciona com regras claras de convivência, proteção aos mais vulneráveis (pedestres, idosos, ciclistas) e menos agressividade nas ruas',
-      'Porque elimina a necessidade de sinalização nas esquinas',
       'Porque permite dirigir sem prestar atenção nos semáforos',
+      'Porque elimina a necessidade de sinalização nas esquinas',
+      'Porque garante que apenas ônibus novos possam rodar',
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
       'Trânsito seguro é resultado de cidadania: respeitar espaço alheio, proteger os mais frágeis e cuidar do ambiente urbano beneficia todos.',
   },
@@ -472,12 +472,12 @@ export const PRIMEIROS_SOCORROS_QUESTIONS: Question[] = [
     statement:
       'Se precisar usar o extintor de incêndio do ônibus em um princípio de fogo, para onde o jato do extintor deve ser direcionado?',
     options: [
-      'Para a ponta mais alta das chamas no ar',
       'Para a base do fogo (onde o incêndio começa), com movimentos em leque de um lado para o outro, mantendo distância segura',
       'Para o rosto de quem está perto para afastar a fumaça',
+      'Para a ponta mais alta das chamas no ar',
       'Direto contra o vidro da janela traseira',
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
       'Apontar o jato para a base das chamas em movimento de leque combate diretamente o material que está queimando e torna o combate eficaz.',
   },

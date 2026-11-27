@@ -1,6 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import { ALL_QUESTIONS } from '../../data/questions';
-import { generateRealExam, generateStudySession } from '../examGenerator';
+import {
+  applyOptionOrder,
+  buildBalancedOptionOrders,
+  generateRealExam,
+  generateStudySession,
+} from '../examGenerator';
 
 describe('examGenerator', () => {
   it('gera prova real com exatamente 30 questões únicas na proporção 10/9/6/5', () => {
@@ -46,5 +51,30 @@ describe('examGenerator', () => {
     const onlyWrong = generateStudySession(ALL_QUESTIONS, 'wrong', wrongSample);
     expect(onlyWrong).toHaveLength(3);
     expect(new Set(onlyWrong.map((q) => q.id))).toEqual(new Set(wrongSample));
+  });
+
+  it('embaralha alternativas de forma equilibrada preservando texto e gabarito correto', () => {
+    const exam = generateRealExam(ALL_QUESTIONS);
+    const orders = buildBalancedOptionOrders(exam);
+    const counts = [0, 0, 0, 0];
+
+    for (const original of exam) {
+      const ordered = applyOptionOrder(original, orders[original.id]);
+      expect(ordered.options).toHaveLength(4);
+      expect(new Set(ordered.options)).toEqual(new Set(original.options));
+      expect(ordered.options[ordered.correctIndex]).toBe(
+        original.options[original.correctIndex]
+      );
+      counts[ordered.correctIndex] += 1;
+    }
+
+    // In 30 questions, every letter A-D must appear 7 or 8 times
+    for (const count of counts) {
+      expect(count).toBeGreaterThanOrEqual(7);
+      expect(count).toBeLessThanOrEqual(8);
+    }
+
+    // Fallback when order is undefined returns question unchanged
+    expect(applyOptionOrder(exam[0], undefined)).toBe(exam[0]);
   });
 });

@@ -1,7 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { TerminalHeader } from './components/TerminalHeader';
 import { ALL_QUESTIONS, QUESTIONS_BY_ID } from './data/questions';
-import { generateRealExam, generateStudySession } from './engine/examGenerator';
+import {
+  applyOptionOrder,
+  buildBalancedOptionOrders,
+  generateRealExam,
+  generateStudySession,
+} from './engine/examGenerator';
 import {
   REAL_EXAM_DURATION_SECONDS,
   evaluateSession,
@@ -91,7 +96,8 @@ export function App() {
     if (!activeSession) return [];
     return activeSession.questionIds
       .map((id) => QUESTIONS_BY_ID[id])
-      .filter((q): q is Question => Boolean(q));
+      .filter((q): q is Question => Boolean(q))
+      .map((q) => applyOptionOrder(q, activeSession.optionOrders?.[q.id]));
   }, [activeSession]);
 
   const finalizeSession = useCallback(
@@ -102,7 +108,8 @@ export function App() {
 
       const questions = current.questionIds
         .map((id) => QUESTIONS_BY_ID[id])
-        .filter((q): q is Question => Boolean(q));
+        .filter((q): q is Question => Boolean(q))
+        .map((q) => applyOptionOrder(q, current.optionOrders?.[q.id]));
 
       const evaluation = evaluateSession(
         questions,
@@ -172,6 +179,7 @@ export function App() {
     const newSession: ActiveSession = {
       mode: 'real',
       questionIds: picked.map((q) => q.id),
+      optionOrders: buildBalancedOptionOrders(picked),
       answers: {},
       currentIndex: 0,
       startedAtIso: new Date().toISOString(),
@@ -203,6 +211,7 @@ export function App() {
     const newSession: ActiveSession = {
       mode: 'study',
       questionIds: picked.map((q) => q.id),
+      optionOrders: buildBalancedOptionOrders(picked),
       answers: {},
       currentIndex: 0,
       startedAtIso: new Date().toISOString(),

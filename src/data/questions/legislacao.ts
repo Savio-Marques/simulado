@@ -23,11 +23,11 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
       'Para realizar o curso especializado de transporte coletivo de passageiros, em quais categorias de CNH o condutor deve estar habilitado no mínimo?',
     options: [
       'Categoria B ou C',
-      'Categoria D ou E',
       'Categoria C apenas',
       'Categoria A ou B',
+      'Categoria D ou E',
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation:
       'O transporte coletivo de passageiros (mais de 8 lugares além do motorista) exige habilitação na categoria D ou na categoria E.',
   },
@@ -82,12 +82,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
     statement:
       'Qual impedimento proíbe o condutor de se matricular e realizar o curso especializado de transporte coletivo?',
     options: [
-      'Ter menos de 5 anos de carteira definitiva',
       'Estar cumprindo pena de suspensão do direito de dirigir ou ter a CNH cassada',
-      'Trabalhar apenas no transporte intermunicipal',
       'Possuir veículo próprio registrado em seu nome',
+      'Ter menos de 5 anos de carteira definitiva',
+      'Trabalhar apenas no transporte intermunicipal',
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
       'Quem está com a CNH suspensa, cassada ou impedido por decisão judicial não pode fazer o curso nem conduzir transporte coletivo.',
   },
@@ -157,12 +157,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
     statement:
       'Ao parar o ônibus para embarque ou desembarque de passageiros em via urbana sem baia, como o motorista deve posicionar o veículo?',
     options: [
-      'Em fila dupla para agilizar o embarque',
       'Paralelo e junto à guia da calçada (meio-fio), nos pontos autorizados',
+      'Em fila dupla para agilizar o embarque',
       'Sobre a faixa de pedestres para facilitar a visão',
       'Com duas rodas em cima da calçada',
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
       'O embarque e o desembarque devem ocorrer sempre do lado da calçada, com o veículo paralelo e próximo ao meio-fio, sem bloquear a circulação.',
   },
@@ -203,11 +203,11 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
       'Quando o ônibus estiver saindo de uma baia ou ponto de parada devidamente sinalizado e o motorista acionar a seta indicando entrada na via, como os demais condutores devem agir segundo o CTB?',
     options: [
       'Acelerar para passar antes do ônibus',
-      'Manter distância e facilitar a entrada do transporte coletivo na faixa',
       'Buzinar para impedir a saída do ponto',
       'Obrigar o ônibus a esperar todos os carros passarem',
+      'Manter distância e facilitar a entrada do transporte coletivo na faixa',
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation:
       'O transporte coletivo tem prioridade no retorno à circulação quando sai de ponto de parada ou baia sinalizada, cabendo aos demais condutores facilitar a manobra com segurança.',
   },
@@ -217,12 +217,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
     statement:
       'Qual é a consequência prevista no CTB para quem conduz veículo de transporte remunerado de passageiros sem possuir a habilitação ou autorização exigida?',
     options: [
-      'Apenas advertência por escrito na primeira vez',
       'Infração leve com 3 pontos na CNH',
       'Infração gravíssima com multa e medida administrativa de remoção do veículo',
       'Nenhuma penalidade se o veículo estiver com o IPVA pago',
+      'Apenas advertência por escrito na primeira vez',
     ],
-    correctIndex: 2,
+    correctIndex: 1,
     explanation:
       'Efetuar transporte remunerado de pessoas sem licença ou autorização para esse fim é infração gravíssima, sujeita a multa e remoção do veículo.',
   },
@@ -233,12 +233,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
       'Observe a placa de regulamentação apresentada. O que ela determina ao motorista do veículo de transporte coletivo?',
     signCode: 'R-1',
     options: [
+      'Proibir o embarque de passageiros na esquina',
       'Reduzir a velocidade e seguir se não houver carros',
       'Parar obrigatoriamente o veículo antes de entrar ou cruzar a via',
       'Dar preferência apenas aos ônibus articulados',
-      'Proibir o embarque de passageiros na esquina',
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation:
       'A placa R-1 (Parada Obrigatória) exige que o condutor pare totalmente o veículo antes da linha de retenção ou cruzamento, mesmo que a via pareça livre.',
   },
@@ -249,12 +249,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
       'Diante da placa exibida, qual é a obrigação correta do condutor ao se aproximar do cruzamento ou rotatória?',
     signCode: 'R-2',
     options: [
-      'Parar completamente mesmo sem nenhum veículo se aproximando',
-      'Dar preferência de passagem aos veículos que circulam pela via transversal',
       'Manter a velocidade porque ônibus sempre tem preferência',
+      'Parar completamente mesmo sem nenhum veículo se aproximando',
       'Proibir a conversão à esquerda naquele trecho',
+      'Dar preferência de passagem aos veículos que circulam pela via transversal',
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation:
       'A placa R-2 (Dê a Preferência) ordena reduzir a velocidade e ceder a passagem aos veículos que trafegam pela via principal ou rotatória.',
   },
@@ -265,12 +265,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
       'Qual é a diferença prática determinada pela placa apresentada para um motorista de ônibus?',
     signCode: 'R-6a',
     options: [
-      'É proibido estacionar, mas é permitido parar rapidamente para embarque ou desembarque',
       'É proibido tanto parar quanto estacionar em qualquer horário',
-      'É permitido estacionar apenas ônibus escolares',
       'Indica ponto exclusivo de parada para táxis',
+      'É permitido estacionar apenas ônibus escolares',
+      'É proibido estacionar, mas é permitido parar rapidamente para embarque ou desembarque',
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation:
       'A placa R-6a (Proibido Estacionar) tem apenas um traço vermelho: proíbe estacionar, mas permite a parada rápida pelo tempo estritamente necessário ao embarque ou desembarque.',
   },
@@ -297,12 +297,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
       'Em um trecho de rodovia sinalizado com a placa apresentada, qual manobra está expressamente proibida?',
     signCode: 'R-7',
     options: [
-      'Mudar para a faixa da direita após parada',
       'Ultrapassar outro veículo naquele trecho',
       'Reduzir a marcha antes da curva',
+      'Mudar para a faixa da direita após parada',
       'Ligar o farol baixo durante o dia',
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
       'A placa R-7 indica Proibido Ultrapassar. Fazer ultrapassagem nesse trecho é infração gravíssima e gera risco grave de colisão frontal.',
   },
@@ -313,12 +313,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
       'Antes de passar por um viaduto ou passarela, o motorista do ônibus visualiza esta placa. O que ela indica?',
     signCode: 'R-15',
     options: [
-      'Largura máxima permitida de 4,5 metros',
       'Comprimento máximo permitido de 4,5 metros',
       'Altura máxima permitida de 4,5 metros',
       'Peso máximo por eixo de 4,5 toneladas',
+      'Largura máxima permitida de 4,5 metros',
     ],
-    correctIndex: 2,
+    correctIndex: 1,
     explanation:
       'As setas em cima e embaixo na placa R-15 indicam Altura Máxima Permitida. Veículos mais altos que 4,5 metros não podem passar.',
   },
@@ -329,12 +329,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
       'Qual é a determinação legal representada por esta placa de regulamentação?',
     signCode: 'R-19',
     options: [
+      'Comprimento máximo da via de 60 quilômetros',
+      'Distância mínima de 60 metros entre ônibus',
       'Velocidade mínima obrigatória de 60 km/h',
       'Velocidade máxima permitida de 60 km/h',
-      'Distância mínima de 60 metros entre ônibus',
-      'Comprimento máximo da via de 60 quilômetros',
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation:
       'A placa R-19 define a velocidade máxima permitida naquele trecho da via (neste exemplo, 60 km/h).',
   },
@@ -345,12 +345,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
       'Ao encontrar esta placa de regulamentação em uma avenida ou rodovia, como o motorista deve posicionar o ônibus?',
     signCode: 'R-27',
     options: [
+      'Apenas veículos de passeio podem trafegar pela direita',
       'Os ônibus, caminhões e veículos de grande porte devem manter-se na faixa da direita',
       'Os ônibus devem circular obrigatoriamente na faixa da esquerda',
       'É proibida a circulação de ônibus em qualquer faixa da avenida',
-      'Apenas veículos de passeio podem trafegar pela direita',
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation:
       'A placa R-27 determina que ônibus, caminhões e veículos de grande porte devem circular na faixa da direita, deixando a esquerda para ultrapassagens e veículos mais rápidos.',
   },
@@ -361,12 +361,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
       'O que determina a placa de regulamentação exibida em um corredor urbano?',
     signCode: 'R-32',
     options: [
-      'Proibida a circulação de ônibus no corredor',
       'Circulação exclusiva de ônibus na faixa ou pista sinalizada',
-      'Estacionamento rotativo para vans escolares',
       'Retorno obrigatório para ônibus intermunicipais',
+      'Proibida a circulação de ônibus no corredor',
+      'Estacionamento rotativo para vans escolares',
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
       'A placa R-32 sinaliza Circulação Exclusiva de Ônibus, garantindo fluidez ao transporte coletivo de passageiros.',
   },
@@ -377,12 +377,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
       'Qual direção obrigatória está indicada pela placa de regulamentação apresentada?',
     signCode: 'R-25a',
     options: [
-      'Proibido virar à esquerda',
-      'Vire à esquerda obrigatoriamente',
       'Sentido duplo de circulação adiante',
       'Desvio obrigatório pela direita',
+      'Proibido virar à esquerda',
+      'Vire à esquerda obrigatoriamente',
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation:
       'As placas R-25 de regulamentação indicam sentido ou direção obrigatória. A R-25a ordena virar à esquerda obrigatoriamente.',
   },
@@ -392,12 +392,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
     statement:
       'Em relação ao uso do cinto de segurança no transporte coletivo rodoviário (ônibus de viagem com cintos instalados), quem tem responsabilidade pelo uso?',
     options: [
-      'Apenas o motorista precisa usar o cinto de segurança',
-      'Motorista e passageiros têm obrigatoriedade de usar o cinto durante a viagem',
       'Somente os passageiros dos primeiros bancos precisam usar o cinto',
       'O uso do cinto é facultativo para adultos em ônibus',
+      'Motorista e passageiros têm obrigatoriedade de usar o cinto durante a viagem',
+      'Apenas o motorista precisa usar o cinto de segurança',
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation:
       'Nos veículos dotados de cinto de segurança para todos os ocupantes, o uso é obrigatório tanto para o condutor quanto para os passageiros.',
   },
@@ -407,12 +407,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
     statement:
       'Durante a condução de veículo de transporte coletivo, é permitido ao motorista falar ao telefone celular usando o aparelho segurado com uma das mãos ou no ouvido?',
     options: [
-      'Sim, desde que o ônibus esteja abaixo de 40 km/h',
-      'Sim, apenas quando não houver passageiros em pé',
       'Não; dirigir segurando ou manuseando telefone celular é infração gravíssima',
+      'Sim, desde que o ônibus esteja abaixo de 40 km/h',
       'Sim, se a ligação durar menos de um minuto',
+      'Sim, apenas quando não houver passageiros em pé',
     ],
-    correctIndex: 2,
+    correctIndex: 0,
     explanation:
       'Segurar ou manusear telefone celular enquanto dirige é infração gravíssima no CTB e coloca todos os passageiros em risco.',
   },
@@ -453,11 +453,11 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
       'No transporte coletivo de passageiros, como deve funcionar a iluminação da cabina do motorista e do salão de passageiros durante a circulação noturna?',
     options: [
       'A luz interna junto ao motorista deve permanecer excessivamente forte para todos verem quem dirige',
-      'Deve-se evitar excesso de luz interna próximo ao para-brisa para não gerar reflexo e prejuízo à visão externa do condutor',
-      'Todos os faróis externos devem ser desligados nas avenidas iluminadas',
       'As luzes indicadoras de parada e lanternas traseiras podem ficar desligadas dentro da cidade',
+      'Todos os faróis externos devem ser desligados nas avenidas iluminadas',
+      'Deve-se evitar excesso de luz interna próximo ao para-brisa para não gerar reflexo e prejuízo à visão externa do condutor',
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation:
       'Luz forte dentro da cabine à noite reflete no para-brisa e prejudica a visão do motorista. Já a iluminação externa regulamentar deve estar sempre acesa.',
   },
@@ -467,12 +467,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
     statement:
       'Conduzir veículo de transporte de passageiros com a validade do curso especializado vencida há mais de 30 dias pode gerar qual consequência na fiscalização?',
     options: [
-      'Nenhuma, pois o curso não tem validade depois de concluído',
       'Autuação por conduzir em desacordo com as exigências legais da atividade',
-      'Conversão automática da categoria D para categoria B',
       'Apenas orientação verbal sem registro',
+      'Conversão automática da categoria D para categoria B',
+      'Nenhuma, pois o curso não tem validade depois de concluído',
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
       'Exercer transporte coletivo com o curso especializado vencido impede o exercício regular da atividade e sujeita o condutor e a empresa às autuações cabíveis.',
   },
@@ -482,12 +482,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
     statement:
       'No cruzamento de uma via sem sinalização entre um ônibus que vem pela via secundária e um automóvel que já circula pela rotatória, quem tem a preferência de passagem?',
     options: [
-      'O ônibus, por ser veículo maior e transportar mais pessoas',
       'O veículo que já está circulando pela rotatória',
       'Quem buzinar primeiro ao entrar no cruzamento',
+      'O ônibus, por ser veículo maior e transportar mais pessoas',
       'Sempre o veículo que estiver mais rápido',
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
       'Pelo CTB, em rotatórias sem sinalização específica, a preferência é sempre do veículo que já estiver circulando por ela.',
   },
@@ -497,12 +497,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
     statement:
       'Qual é o limite de álcool no sangue ou no teste do bafômetro tolerado pela Lei Seca para o motorista profissional em serviço?',
     options: [
-      'Até 0,5 grama por litro de sangue',
-      'Até 0,2 miligrama por litro de ar alveolar',
       'Tolerância zero (qualquer concentração sujeita o condutor a infração gravíssima ou crime)',
+      'Até 0,5 grama por litro de sangue',
       'Até uma lata de cerveja antes de iniciar o turno',
+      'Até 0,2 miligrama por litro de ar alveolar',
     ],
-    correctIndex: 2,
+    correctIndex: 0,
     explanation:
       'No Brasil vigora a tolerância zero ao álcool ao volante, com multa gravíssima, suspensão da CNH por 12 meses e risco de crime de trânsito.',
   },
@@ -528,12 +528,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
       'Ao visualizar esta placa de advertência e se aproximar de uma faixa de pedestres sem semáforo onde há pessoas aguardando para atravessar, o que determina o CTB?',
     signCode: 'A-32b',
     options: [
-      'Manter a velocidade e sinalizar com luz alta para o pedestre esperar',
-      'Dar preferência de passagem ao pedestre, reduzindo a velocidade e parando se necessário',
       'Usar a buzina contínua para liberar o corredor',
+      'Manter a velocidade e sinalizar com luz alta para o pedestre esperar',
       'Desviar pela contramão para não precisar frear',
+      'Dar preferência de passagem ao pedestre, reduzindo a velocidade e parando se necessário',
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation:
       'Na faixa de pedestres sem semáforo, a preferência é absoluta do pedestre. O condutor deve reduzir e parar com segurança para a travessia.',
   },
@@ -544,11 +544,11 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
       'Sobre os documentos de porte obrigatório durante a condução de ônibus de transporte coletivo, o motorista deve portar:',
     options: [
       'Apenas o CPF e o título de eleitor',
-      'CNH válida (física ou digital no aplicativo oficial) compatível com a categoria e o CRLV-e do veículo',
-      'Somente o crachá da empresa',
       'Apenas o comprovante de residência atualizado',
+      'Somente o crachá da empresa',
+      'CNH válida (física ou digital no aplicativo oficial) compatível com a categoria e o CRLV-e do veículo',
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation:
       'É obrigatório portar a CNH (física ou digital oficial com curso especializado averbado) e o documento de licenciamento do veículo (CRLV-e).',
   },
@@ -575,11 +575,11 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
     signCode: 'R-7',
     options: [
       'Pode cruzar a linha amarela contínua para fazer ultrapassagens rápidas',
-      'Não é permitido ultrapassar quando a faixa divisória do centro for amarela contínua',
       'Linha amarela contínua só vale para automóveis leves',
       'Ônibus pode cruzar linha contínua sempre que estiver atrasado',
+      'Não é permitido ultrapassar quando a faixa divisória do centro for amarela contínua',
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation:
       'A linha longitudinal amarela contínua proíbe a ultrapassagem e a transposição de faixa para o sentido oposto.',
   },
@@ -589,12 +589,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
     statement:
       'Em caso de envolvimento em acidente de trânsito com vítima, deixar o condutor de prestar ou providenciar socorro à vítima, podendo fazê-lo sem risco pessoal, configura:',
     options: [
-      'Apenas uma infração administrativa leve',
       'Crime de trânsito previsto no Código de Trânsito Brasileiro',
-      'Conduta permitida se o seguro da empresa cobrir os danos',
+      'Apenas uma infração administrativa leve',
       'Direito do motorista para não atrasar a linha',
+      'Conduta permitida se o seguro da empresa cobrir os danos',
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
       'Omissão de socorro em acidente com vítima é crime previsto no art. 304 do CTB, além de infração gravíssima se o condutor fugir do local.',
   },
@@ -604,12 +604,12 @@ export const LEGISLACAO_QUESTIONS: Question[] = [
     statement:
       'Em rodovias de pista simples fora do perímetro urbano, qual é a regra do CTB sobre o uso de farol baixo durante o dia para veículos pesados e ônibus?',
     options: [
-      'É obrigatório manter os faróis baixos acesos durante o dia em rodovias de pista simples',
       'É proibido ligar qualquer farol durante o dia',
+      'É obrigatório manter os faróis baixos acesos durante o dia em rodovias de pista simples',
       'Só é obrigatório ligar farol depois das 20 horas',
       'Basta ligar o pisca-alerta durante toda a viagem',
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation:
       'Pelo CTB, em rodovias de pista simples localizadas fora dos perímetros urbanos, os faróis baixos (ou DRL quando aplicável) devem permanecer acesos durante o dia.',
   },

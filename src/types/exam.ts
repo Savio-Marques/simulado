@@ -38,9 +38,12 @@ export type FontScale = 'normal' | 'large' | 'xlarge';
 
 export type StudyFilter = 'all' | 'wrong' | ModuleId;
 
+export type OptionOrder = [number, number, number, number];
+
 export interface ActiveSession {
   mode: ExamMode;
   questionIds: string[];
+  optionOrders?: Record<string, OptionOrder>;
   answers: Record<string, number | null>;
   currentIndex: number;
   startedAtIso: string;

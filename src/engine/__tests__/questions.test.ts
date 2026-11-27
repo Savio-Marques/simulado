@@ -71,4 +71,25 @@ describe('Banco de questões CONTRAN 789/2020', () => {
       }
     }
   });
+
+  it('distribui as respostas corretas de forma equilibrada (25% em cada letra A, B, C, D) por módulo e no total', () => {
+    const totalCounts = [0, 0, 0, 0];
+    const byModule: Record<string, [number, number, number, number]> = {
+      legislacao: [0, 0, 0, 0],
+      direcao_defensiva: [0, 0, 0, 0],
+      primeiros_socorros: [0, 0, 0, 0],
+      relacionamento: [0, 0, 0, 0],
+    };
+
+    for (const q of ALL_QUESTIONS) {
+      totalCounts[q.correctIndex] += 1;
+      byModule[q.module][q.correctIndex] += 1;
+    }
+
+    expect(byModule.legislacao).toEqual([10, 10, 10, 10]);
+    expect(byModule.direcao_defensiva).toEqual([9, 9, 9, 9]);
+    expect(byModule.primeiros_socorros).toEqual([8, 8, 8, 8]);
+    expect(byModule.relacionamento).toEqual([6, 6, 6, 6]);
+    expect(totalCounts).toEqual([33, 33, 33, 33]);
+  });
 });
